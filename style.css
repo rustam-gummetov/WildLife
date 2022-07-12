@@ -3,12 +3,28 @@
     margin: 0;
 }
 
-html, body {
-    height: 100%;
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
 }
 
-.page__welcome {
-    background-image: url('Pictures/Rectangle.png');
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(fonts/Rubik-Regular.ttf);
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.welcome {
+    background-image: url('img/Rectangle.png');
     background-size: cover;
     height: 780px;
 }
@@ -20,13 +36,16 @@ header {
     padding-top: 20px;
 }
 
-.page__welcome__logo-header {
+.logo {
     display: flex;
     align-items: center;
+}
+
+.header__logo {
     padding-left: 120px;
 }
 
-.wildlife-text {
+.logo__text {
     margin-left: 15.73px;
     font-family: 'Roboto';
     font-style: normal;
@@ -53,20 +72,17 @@ nav li a {
     text-decoration: none;
 }
 
-.page__welcome__nav-header {
-    display: block;
+.header__nav {
     width: 550px;
-    text-align: center;
     margin-right: 120px;
 }
 
-.page__welcome__nav-header ul {
+.nav ul {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
-.page__welcome__nav-header__btn-sign-in {
+.header__nav__btn {
     width: 120px;
     height: 50px;
     border: 2px solid #CD6326;
@@ -82,22 +98,23 @@ nav li a {
     color: #F7F7F7;
 }
 
-.page__welcome__nav-header__btn-sign-in:hover {
+.header__nav__btn:hover {
     background-color: #CD6326;
 }
 
-.page__welcome__nav-header__btn-sign-in:active {
+.header__nav__btn:active {
     background-color: #8F5613;
     border: #8F5613;
 }
 
-.page__welcome__survival {
-    display: inline-block;
+.survival {
+    display: flex;
+    flex-direction: column;
     margin-left: 120px;
     margin-top: 110px;
 }
 
-.page__welcome__survival h1 {
+.survival h1 {
     color: #CD6326;
     font-family: 'Open Sans';
     font-style: normal;
@@ -107,7 +124,7 @@ nav li a {
     letter-spacing: 2px;
 }
 
-.page__welcome__survival__text {
+.survival__text {
     display: inline-block;
     width: 274px;
     height: 108px;
@@ -121,9 +138,10 @@ nav li a {
     color: #F7F7F7;
 }
 
-.page__welcome__survival__btn-holder__btn-donate {
-    display: block;
+.survival__btn {
+    width: 160px;
     margin-top: 65px;
+    margin-bottom: 240px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -137,17 +155,17 @@ nav li a {
     border: 0;
 }
 
-.page__welcome__survival__btn-holder__btn-donate:hover {
+.survival__btn:hover {
     background-color: #E39128;
     border: #E39128;
 }
 
-.page__welcome__survival__btn-holder__btn-donate:active {
+.survival__btn:active {
     background-color: #8F5613;
     border: #8F5613;
 }
 
-.page__latest-articles h2 {
+.articles h2 {
     margin-top: 120px;
     width: 324px;
     height: 72px;
@@ -162,7 +180,7 @@ nav li a {
     color: #333333;
 }
 
-.page__latest-articles h3 {
+.articles h3 {
     margin-top: 20px;
     width: 332px;
     height: 36px;
@@ -177,30 +195,30 @@ nav li a {
     color: #666666;
 }
 
-.page__slider {
+.articles__slider {
     margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page__slider img {
+.articles__slider img {
     margin-left: 30px;
     margin-right: 30px;    
 }
 
-.page__slider div {
+.articles__slider div {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.page__slider__slider-card1 {
-    background-image: url("Pictures/Deer.png");
+.articles__slider__card1 {
+    background-image: url("img/Deer.png");
     width: 300px;
     height: 360px;
 }
 
-.page__slider h4 {
+.articles__slider h4 {
     margin-top: 250px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -211,7 +229,7 @@ nav li a {
     color: #F7F7F7;
 }
 
-.page__slider h5 {
+.articles__slider h5 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -221,24 +239,24 @@ nav li a {
     color: #F7F7F7;
 }
 
-.page__slider__slider-card2 {
-    background-image: url("Pictures/Squirrel.png");
+.articles__slider__card2 {
+    background-image: url("img/Squirrel.png");
     width: 300px;
     height: 360px;
 }
 
-.page__slider__slider-card3 {
-    background-image: url("Pictures/Bird.png");
+.articles__slider__card3 {
+    background-image: url("img/Bird.png");
     width: 300px;
     height: 360px;
 }
 
-.page__get-notified {
+.notified {
     margin: 240px auto;
     text-align: center;
 }
 
-.page__get-notified h3 {
+.notified h3 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -248,13 +266,13 @@ nav li a {
     color: #333333;
 }
 
-.page__get-notified__send {
+.notified__send {
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
 
-.page__get-notified__send__email {
+.notified__send__email {
     width: 540px;
     height: 60px;
     font-size: 22px;
@@ -270,7 +288,7 @@ nav li a {
     color: #666666;
 }
 
-.page__get-notified__send__submit {
+.notified__send__submit {
     width: 120;
     height: 60;
     font-size: 22px;
@@ -290,73 +308,64 @@ nav li a {
     color: #F7F7F7;
 }
 
-.page__get-notified__send__submit:hover {
+.notified__send__submit:hover {
     background-color: #E39128;
     border: #E39128;
 }
 
-.page__get-notified__send__submit:active {
+.notified__send__submit:active {
     background-color: #8F5613;
     border: #8F5613;
 }
 
 footer {
     height: 360px;
-    background-image: url("Pictures/footer.png");
+    background-image: url("img/footer.png");
     background-size: cover;
     display: flex;
     justify-content: space-between;
 }
 
-.page__logo-footer {
-    display: flex;
-    align-items: center;
-    margin-left: 120px;
+.footer__logo {
+    padding-left: 120px;
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
-.page__nav-footer {
+.footer__nav {
     width: 480px;
-    justify-content: center;
     height: 60px;
     margin-top: 150px;
     margin-bottom: 150px;
-    align-self: center;
 }
 
-.page__nav-footer ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.page__networks {
+.networks {
     display: flex;
     margin: 160px 120px 160px 0;
 }
 
-.page__networks div {
+.networks div {
     margin-left: 25px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
 }
 
-.page__networks__icon-facebook {
-    background: url("Pictures/facebook.svg") no-repeat;
+.networks__facebook {
+    background: url("img/facebook.svg") no-repeat;
 }
 
-.page__networks__icon-instagram {
-    background: url("Pictures/instagram.svg") no-repeat;
+.networks__instagram {
+    background: url("img/instagram.svg") no-repeat;
 }
-.page__networks__icon-pinterest {
-    background: url("Pictures/pinterest.svg") no-repeat;
+.networks__pinterest {
+    background: url("img/pinterest.svg") no-repeat;
 }
-.page__networks__icon-telegram {
-    background: url("Pictures/telegram.svg") no-repeat;
+.networks__telegram {
+    background: url("img/telegram.svg") no-repeat;
 }
 
-#form-container__donate-form {
+#popap__form {
     display: flex;
     flex-direction: column;
     width: 480px;
@@ -367,7 +376,7 @@ footer {
     z-index: 1;
 }
 
-#form-container__donate-form h2 {
+#popap__form h2 {
     width: 480px;
     height: 70px;
     margin-bottom: 35px;
@@ -382,7 +391,7 @@ footer {
     color: #333333;
 }
 
-#form-container__donate-form label {
+#popap__form label {
     margin-left: 40px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -392,7 +401,7 @@ footer {
     color: #828282;
 }
 
-#form-container__donate-form input {
+#popap__form input {
     margin: 0 40px 35px 40px;
     border: 0;
     border-bottom: 2px solid #D3D3D3;
@@ -403,16 +412,16 @@ footer {
     line-height: 36px;
 }
 
-#form-container__donate-form input::placeholder {
+#popap__form input::placeholder {
     color: #BDBDBD;
 }
 
-#form-container__donate-form input:focus {
+#popap__form input:focus {
     outline: 0;
     border-bottom: 2px solid #D3D3D3;
 }
 
-#form-container__donate-form textarea {
+#popap__form textarea {
     margin: 0 40px 35px 40px;
     width: 400px;
     height: 100px;
@@ -420,7 +429,7 @@ footer {
     box-sizing: border-box;
 }
 
-.form-container__donate-form__submit-send {
+.popap__form__btn {
     width: 400px;
     height: 65px;
     background: #E39128;
@@ -434,12 +443,12 @@ footer {
     color: #FFFFFF;
 }
 
-.form-container__donate-form__submit-send:hover {
+.popap__form__btn:hover {
     background-color: #CD6326;
     border: #CD6326;
 }
 
-.form-container__donate-form__submit-send:active {
+.popap__form__btn:active {
     background-color: #8F5613;
     border: #8F5613;
 }
@@ -449,47 +458,43 @@ footer {
     position: absolute;
 }
 
-.page-none {
-
-    opacity: 0.5;
-}
-
-#form-container {
+#popap {
     display: none;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
 @media (max-width: 1200px) {
-    .page__slider__slider-card1 {
+    .articles__slider__card1 {
         display: block;
     }
 
-    .page__slider__slider-card2 {
+    .articles__slider__card2 {
         display: block;
     }
 
-    .page__slider__slider-card3 {
+    .articles__slider__card3 {
         display: block;
     }
 
-    .page__welcome__logo-header {
+    .header__logo {
         padding-left: 80px;
         margin-right: 20px;
     }
 
-    .page__logo-footer {
+    .footer__logo {
         margin-left: 80px;
         margin-right: 20px;
     }
 
-    .page__welcome__nav-header {
+    .header__nav {
         margin-right: 80px;
     }
 
-    .page__networks {
+    .networks {
         margin-right: 80px;
     }
 
@@ -497,20 +502,23 @@ footer {
         font-size: 20px;
     }
 
-    .page__welcome__nav-header__btn-sign-in {
+    .header__nav__btn {
         font-size: 20px;
         width: 96px;
         height: 40px;
     }
 
+    .footer__nav li {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1024px) {
-    .page__slider__slider-card2 {
+    .articles__slider__card2 {
         display: none;
     }
 
-    .page__slider__slider-card3 {
+    .articles__slider__card3 {
         display: none;
     }
 
@@ -519,13 +527,13 @@ footer {
         height: auto;
     }
 
-    .page__logo-footer {
+    .footer__logo {
         padding: 20px 0;
         margin: 0;
         justify-content: center;
     }
 
-    .page__nav-footer {
+    .footer__nav {
         width: auto;
         padding: 20px 0;
         margin: 0;
@@ -533,11 +541,11 @@ footer {
         text-align: center;
     }
 
-    .page__nav-footer ul {
+    .footer__nav ul {
         margin: 0 40px;
     }
 
-    .page__networks {
+    .networks {
         margin: 0;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -551,59 +559,53 @@ footer {
         text-align: center;
     }
 
-    .page__welcome__logo-header {
+    .header__logo {
         justify-content: center;
         margin: 0;
         padding: 20px 0;
     }
 
-    .page__welcome__nav-header {
+    .header__nav {
         margin: 0 20px;
         width: auto;
     }
 
-    .page__welcome__survival {
-        display: block;
-        text-align: center;
+    .survival {
+        align-items: center;
         margin: 0;
     }
 
-    .page__welcome {
+    .welcome {
         height: auto;
     }
 
-    .page__welcome__survival__btn-holder {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .page__welcome__survival__btn-holder__btn-donate {
+    .survival__btn {
         display: inline;
     }
 
-    .page__slider div {
+    .articles__slider div {
         margin-left: 5px;
         margin-right: 5px;
     }
 
-    .page__slider img {
+    .articles__slider img {
         width: 20px;
         height: 20px;
     }
 
-    .page__get-notified h3 {
+    .notified h3 {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .page__get-notified__send__email {
+    .notified__send__email {
         width: 450px;
         height: 50px;
         font-size: 20px;
         margin-left: 20px;
     }
     
-    .page__get-notified__send__submit {
+    .notified__send__submit {
         width: 100;
         height: 50;
         font-size: 20px;
@@ -612,52 +614,52 @@ footer {
         margin-right: 20px;
     }
 
-    #form-container__donate-form {
+    #popap__form {
         width: 400px;
         height: 500px;
     }
 
-    #form-container__donate-form h2 {
+    #popap__form h2 {
         width: 400px;
         font-size: 36px;
     }
 
-    #form-container__donate-form textarea {
+    #popap__form textarea {
         width: 320px;
     }
     
-    .form-container__donate-form__submit-send {
+    .popap__form__btn {
         width: 320px;
     }
 }
 
 @media (max-width: 420px) {
-    .page__latest-articles h2 {
+    .articles h2 {
         margin-top: 20px;
     }
 
-    .page__slider {
+    .articles__slider {
         margin-top: 20px;
     }
 
-    .page__get-notified {
+    .notified {
         margin: 120px auto;
         text-align: center;
     }
 
-    .page__slider img {
+    .articles__slider img {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .page__get-notified__send__email {
+    .notified__send__email {
         width: 200px;
         height: 40px;
         font-size: 20px;
         margin-left: 20px;
     }
     
-    .page__get-notified__send__submit {
+    .notified__send__submit {
         width: 60;
         height: 40;
         font-size: 20px;
@@ -666,21 +668,21 @@ footer {
         margin-right: 20px;
     }
 
-    #form-container__donate-form {
+    #popap__form {
         width: 320px;
         height: 400px;
     }
 
-    #form-container__donate-form h2 {
+    #popap__form h2 {
         width: 320px;
         font-size: 30px;
     }
 
-    #form-container__donate-form textarea {
+    #popap__form textarea {
         width: 256px;
     }
     
-    .form-container__donate-form__submit-send {
+    .popap__form__btn {
         width: 256px;
     }
 }
