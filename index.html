@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="form-container">
-      <form id="form-container__donate" onclick="event.stopPropagation()">
+      <form id="form-container__donate-form" onclick="event.stopPropagation()">
         <h2>Donate</h2>
         <label for="name">Your name</label>
         <input type="text" placeholder="Name" name="name" />
@@ -16,24 +16,30 @@
         <input type="text" placeholder="1000$" name="amount" />
         <label for="comment">Your comment:</label>
         <textarea type="text" name="comment"></textarea>
-        <input class="submit-send" type="submit" value="Send" />
+        <input
+          class="form-container__donate-form__submit-send"
+          type="submit"
+          value="Send"
+        />
       </form>
     </div>
 
     <div id="page">
-      <div class="welcome">
+      <div class="page__welcome">
         <header>
-          <div class="logo-header">
+          <div class="page__welcome__logo-header">
             <img
               src="Pictures/path0.svg"
               width="70px"
               height="60px"
               alt="logo"
             />
-            <span class="wildlife-text"> Wildlife </span>
+            <span class="page__welcome__wildlife-text wildlife-text">
+              Wildlife
+            </span>
           </div>
 
-          <nav class="nav-header">
+          <nav class="page__welcome__nav-header">
             <ul>
               <li>
                 <a onclick="scrollToElement('articles')">Articles</a>
@@ -42,42 +48,51 @@
               <li>
                 <img src="Pictures/Vector.png" width="24px" height="24px" />
               </li>
-              <li><button class="btn-sign-in">Sign in</button></li>
+              <li>
+                <button class="page__welcome__nav-header__btn-sign-in">
+                  Sign in
+                </button>
+              </li>
             </ul>
           </nav>
         </header>
 
-        <div class="survival">
+        <div class="page__welcome__survival">
           <h1>Survival</h1>
-          <div class="text">
+          <div class="page__welcome__survival__text">
             <p>
               What this means is that we exist to help protect our environment
               and do in numbers of ways. You can save the planet by donation.
             </p>
           </div>
-          <div class="btn-holder">
-            <button class="btn-donate" id="btn-donate">Donate</button>
+          <div class="page__welcome__survival__btn-holder">
+            <button
+              class="page__welcome__survival__btn-holder__btn-donate"
+              id="btn-donate"
+            >
+              Donate
+            </button>
           </div>
         </div>
       </div>
 
       <main>
-        <div class="latest-articles">
+        <div class="page__latest-articles">
           <h2>Latest articles</h2>
           <h3>Breaking news from the wild</h3>
         </div>
 
-        <div class="slider" id="slider">
+        <div class="page__slider" id="slider">
           <img src="Pictures/ArrowLeft.png" alt="ArrowRight" id="arrow-left" />
-          <div class="slider-card1" id="slider-card1">
+          <div class="page__slider__slider-card1" id="slider-card1">
             <h4>Deer</h4>
             <h5>Naturalist investigation</h5>
           </div>
-          <div class="slider-card2">
+          <div class="page__slider__slider-card2">
             <h4>Squirrel</h4>
             <h5>Kamikaze squirrels</h5>
           </div>
-          <div class="slider-card3" id="articles">
+          <div class="page__slider__slider-card3" id="articles">
             <h4>Bird</h4>
             <h5>Birds Fight club</h5>
           </div>
@@ -88,30 +103,40 @@
           />
         </div>
 
-        <div class="get-notified">
+        <div class="page__get-notified">
           <form>
             <h3>Get notified about new amazing articles</h3>
-            <div class="send">
-              <input class="email" type="text" placeholder="Email" />
-              <input class="submit" type="submit" value="Send" />
+            <div class="page__get-notified__send">
+              <input
+                class="page__get-notified__send__email"
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                class="page__get-notified__send__submit"
+                type="submit"
+                value="Send"
+              />
             </div>
           </form>
         </div>
       </main>
 
       <footer>
-        <div class="logo-footer">
+        <div class="page__logo-footer">
           <img
-            class="logo-image"
+            class="page__logo-footer__logo-image"
             src="Pictures/path0.svg"
             width="70px"
             height="60px"
             alt="logo"
           />
-          <span class="wildlife-text"> Wildlife </span>
+          <span class="page__logo-footer__wildlife-text wildlife-text">
+            Wildlife
+          </span>
         </div>
 
-        <nav class="nav-footer">
+        <nav class="page__nav-footer">
           <ul>
             <li><a href="#">Articles</a></li>
             <li><a href="#">About us</a></li>
@@ -119,11 +144,11 @@
           </ul>
         </nav>
 
-        <div class="networks" id="contacts">
-          <div class="icon-facebook"></div>
-          <div class="icon-instagram"></div>
-          <div class="icon-pinterest"></div>
-          <div class="icon-telegram"></div>
+        <div class="page__networks" id="contacts">
+          <div class="page__networks__icon-facebook"></div>
+          <div class="page__networks__icon-instagram"></div>
+          <div class="page__networks__icon-pinterest"></div>
+          <div class="page__networks__icon-telegram"></div>
         </div>
       </footer>
     </div>

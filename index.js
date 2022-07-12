@@ -3,7 +3,7 @@ function scrollToElement(id) {
     el.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
 }
 
-const form = document.getElementById('form-container__donate');
+const form = document.getElementById('form-container__donate-form');
 const formContainer = document.getElementById('form-container');
 const page = document.getElementById('page');
 const donate = document.getElementById('btn-donate');

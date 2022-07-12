@@ -7,7 +7,7 @@ html, body {
     height: 100%;
 }
 
-.welcome {
+.page__welcome {
     background-image: url('Pictures/Rectangle.png');
     background-size: cover;
     height: 780px;
@@ -20,7 +20,7 @@ header {
     padding-top: 20px;
 }
 
-.logo-header {
+.page__welcome__logo-header {
     display: flex;
     align-items: center;
     padding-left: 120px;
@@ -53,20 +53,20 @@ nav li a {
     text-decoration: none;
 }
 
-.nav-header {
+.page__welcome__nav-header {
     display: block;
     width: 550px;
     text-align: center;
     margin-right: 120px;
 }
 
-.nav-header ul {
+.page__welcome__nav-header ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.btn-sign-in {
+.page__welcome__nav-header__btn-sign-in {
     width: 120px;
     height: 50px;
     border: 2px solid #CD6326;
@@ -82,22 +82,22 @@ nav li a {
     color: #F7F7F7;
 }
 
-.btn-sign-in:hover {
+.page__welcome__nav-header__btn-sign-in:hover {
     background-color: #CD6326;
 }
 
-.btn-sign-in:active {
+.page__welcome__nav-header__btn-sign-in:active {
     background-color: #8F5613;
     border: #8F5613;
 }
 
-.survival {
+.page__welcome__survival {
     display: inline-block;
     margin-left: 120px;
     margin-top: 110px;
 }
 
-.survival h1 {
+.page__welcome__survival h1 {
     color: #CD6326;
     font-family: 'Open Sans';
     font-style: normal;
@@ -107,7 +107,7 @@ nav li a {
     letter-spacing: 2px;
 }
 
-.text {
+.page__welcome__survival__text {
     display: inline-block;
     width: 274px;
     height: 108px;
@@ -121,7 +121,7 @@ nav li a {
     color: #F7F7F7;
 }
 
-.btn-donate {
+.page__welcome__survival__btn-holder__btn-donate {
     display: block;
     margin-top: 65px;
     font-family: 'Roboto';
@@ -137,17 +137,17 @@ nav li a {
     border: 0;
 }
 
-.btn-donate:hover {
+.page__welcome__survival__btn-holder__btn-donate:hover {
     background-color: #E39128;
     border: #E39128;
 }
 
-.btn-donate:active {
+.page__welcome__survival__btn-holder__btn-donate:active {
     background-color: #8F5613;
     border: #8F5613;
 }
 
-.latest-articles h2 {
+.page__latest-articles h2 {
     margin-top: 120px;
     width: 324px;
     height: 72px;
@@ -162,7 +162,7 @@ nav li a {
     color: #333333;
 }
 
-.latest-articles h3 {
+.page__latest-articles h3 {
     margin-top: 20px;
     width: 332px;
     height: 36px;
@@ -177,30 +177,30 @@ nav li a {
     color: #666666;
 }
 
-.slider {
+.page__slider {
     margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slider img {
+.page__slider img {
     margin-left: 30px;
     margin-right: 30px;    
 }
 
-.slider div {
+.page__slider div {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.slider-card1 {
+.page__slider__slider-card1 {
     background-image: url("Pictures/Deer.png");
     width: 300px;
     height: 360px;
 }
 
-.slider h4 {
+.page__slider h4 {
     margin-top: 250px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -211,7 +211,7 @@ nav li a {
     color: #F7F7F7;
 }
 
-.slider h5 {
+.page__slider h5 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -221,24 +221,24 @@ nav li a {
     color: #F7F7F7;
 }
 
-.slider-card2 {
+.page__slider__slider-card2 {
     background-image: url("Pictures/Squirrel.png");
     width: 300px;
     height: 360px;
 }
 
-.slider-card3 {
+.page__slider__slider-card3 {
     background-image: url("Pictures/Bird.png");
     width: 300px;
     height: 360px;
 }
 
-.get-notified {
+.page__get-notified {
     margin: 240px auto;
     text-align: center;
 }
 
-.get-notified h3 {
+.page__get-notified h3 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -248,13 +248,13 @@ nav li a {
     color: #333333;
 }
 
-.send {
+.page__get-notified__send {
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
 
-.email {
+.page__get-notified__send__email {
     width: 540px;
     height: 60px;
     font-size: 22px;
@@ -270,7 +270,7 @@ nav li a {
     color: #666666;
 }
 
-.submit {
+.page__get-notified__send__submit {
     width: 120;
     height: 60;
     font-size: 22px;
@@ -290,12 +290,12 @@ nav li a {
     color: #F7F7F7;
 }
 
-.submit:hover {
+.page__get-notified__send__submit:hover {
     background-color: #E39128;
     border: #E39128;
 }
 
-.submit:active {
+.page__get-notified__send__submit:active {
     background-color: #8F5613;
     border: #8F5613;
 }
@@ -308,7 +308,7 @@ footer {
     justify-content: space-between;
 }
 
-.logo-footer {
+.page__logo-footer {
     display: flex;
     align-items: center;
     margin-left: 120px;
@@ -316,7 +316,7 @@ footer {
     margin-bottom: 150px;
 }
 
-.nav-footer {
+.page__nav-footer {
     width: 480px;
     justify-content: center;
     height: 60px;
@@ -325,38 +325,38 @@ footer {
     align-self: center;
 }
 
-.nav-footer ul {
+.page__nav-footer ul {
     display: flex;
     justify-content: space-between;
 }
 
-.networks {
+.page__networks {
     display: flex;
     margin: 160px 120px 160px 0;
 }
 
-.networks div {
+.page__networks div {
     margin-left: 25px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
 }
 
-.icon-facebook {
+.page__networks__icon-facebook {
     background: url("Pictures/facebook.svg") no-repeat;
 }
 
-.icon-instagram {
+.page__networks__icon-instagram {
     background: url("Pictures/instagram.svg") no-repeat;
 }
-.icon-pinterest {
+.page__networks__icon-pinterest {
     background: url("Pictures/pinterest.svg") no-repeat;
 }
-.icon-telegram {
+.page__networks__icon-telegram {
     background: url("Pictures/telegram.svg") no-repeat;
 }
 
-#form-container__donate {
+#form-container__donate-form {
     display: flex;
     flex-direction: column;
     width: 480px;
@@ -367,7 +367,7 @@ footer {
     z-index: 1;
 }
 
-#form-container__donate h2 {
+#form-container__donate-form h2 {
     width: 480px;
     height: 70px;
     margin-bottom: 35px;
@@ -382,7 +382,7 @@ footer {
     color: #333333;
 }
 
-#form-container__donate label {
+#form-container__donate-form label {
     margin-left: 40px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -392,7 +392,7 @@ footer {
     color: #828282;
 }
 
-#form-container__donate input {
+#form-container__donate-form input {
     margin: 0 40px 35px 40px;
     border: 0;
     border-bottom: 2px solid #D3D3D3;
@@ -403,16 +403,16 @@ footer {
     line-height: 36px;
 }
 
-#form-container__donate input::placeholder {
+#form-container__donate-form input::placeholder {
     color: #BDBDBD;
 }
 
-#form-container__donate input:focus {
+#form-container__donate-form input:focus {
     outline: 0;
     border-bottom: 2px solid #D3D3D3;
 }
 
-#form-container__donate textarea {
+#form-container__donate-form textarea {
     margin: 0 40px 35px 40px;
     width: 400px;
     height: 100px;
@@ -420,7 +420,7 @@ footer {
     box-sizing: border-box;
 }
 
-.submit-send {
+.form-container__donate-form__submit-send {
     width: 400px;
     height: 65px;
     background: #E39128;
@@ -434,12 +434,12 @@ footer {
     color: #FFFFFF;
 }
 
-.submit-send:hover {
+.form-container__donate-form__submit-send:hover {
     background-color: #CD6326;
     border: #CD6326;
 }
 
-.submit-send:active {
+.form-container__donate-form__submit-send:active {
     background-color: #8F5613;
     border: #8F5613;
 }
@@ -463,33 +463,33 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    .slider-card1 {
+    .page__slider__slider-card1 {
         display: block;
     }
 
-    .slider-card2 {
+    .page__slider__slider-card2 {
         display: block;
     }
 
-    .slider-card3 {
+    .page__slider__slider-card3 {
         display: block;
     }
 
-    .logo-header {
+    .page__welcome__logo-header {
         padding-left: 80px;
         margin-right: 20px;
     }
 
-    .logo-footer {
+    .page__logo-footer {
         margin-left: 80px;
         margin-right: 20px;
     }
 
-    .nav-header {
+    .page__welcome__nav-header {
         margin-right: 80px;
     }
 
-    .networks {
+    .page__networks {
         margin-right: 80px;
     }
 
@@ -497,7 +497,7 @@ footer {
         font-size: 20px;
     }
 
-    .btn-sign-in {
+    .page__welcome__nav-header__btn-sign-in {
         font-size: 20px;
         width: 96px;
         height: 40px;
@@ -506,11 +506,11 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .slider-card2 {
+    .page__slider__slider-card2 {
         display: none;
     }
 
-    .slider-card3 {
+    .page__slider__slider-card3 {
         display: none;
     }
 
@@ -519,13 +519,13 @@ footer {
         height: auto;
     }
 
-    .logo-footer {
+    .page__logo-footer {
         padding: 20px 0;
         margin: 0;
         justify-content: center;
     }
 
-    .nav-footer {
+    .page__nav-footer {
         width: auto;
         padding: 20px 0;
         margin: 0;
@@ -533,11 +533,11 @@ footer {
         text-align: center;
     }
 
-    .nav-footer ul {
+    .page__nav-footer ul {
         margin: 0 40px;
     }
 
-    .networks {
+    .page__networks {
         margin: 0;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -551,59 +551,59 @@ footer {
         text-align: center;
     }
 
-    .logo-header {
+    .page__welcome__logo-header {
         justify-content: center;
         margin: 0;
         padding: 20px 0;
     }
 
-    .nav-header {
+    .page__welcome__nav-header {
         margin: 0 20px;
         width: auto;
     }
 
-    .survival {
+    .page__welcome__survival {
         display: block;
         text-align: center;
         margin: 0;
     }
 
-    .welcome {
+    .page__welcome {
         height: auto;
     }
 
-    .btn-holder {
+    .page__welcome__survival__btn-holder {
         text-align: center;
         padding: 20px;
     }
 
-    .btn-form-container__donate {
+    .page__welcome__survival__btn-holder__btn-donate {
         display: inline;
     }
 
-    .slider div {
+    .page__slider div {
         margin-left: 5px;
         margin-right: 5px;
     }
 
-    .slider img {
+    .page__slider img {
         width: 20px;
         height: 20px;
     }
 
-    .get-notified h3 {
+    .page__get-notified h3 {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .email {
+    .page__get-notified__send__email {
         width: 450px;
         height: 50px;
         font-size: 20px;
         margin-left: 20px;
     }
     
-    .submit {
+    .page__get-notified__send__submit {
         width: 100;
         height: 50;
         font-size: 20px;
@@ -612,52 +612,52 @@ footer {
         margin-right: 20px;
     }
 
-    #form-container__donate {
+    #form-container__donate-form {
         width: 400px;
         height: 500px;
     }
 
-    #form-container__donate h2 {
+    #form-container__donate-form h2 {
         width: 400px;
         font-size: 36px;
     }
 
-    #form-container__donate textarea {
+    #form-container__donate-form textarea {
         width: 320px;
     }
     
-    .submit-send {
+    .form-container__donate-form__submit-send {
         width: 320px;
     }
 }
 
 @media (max-width: 420px) {
-    .latest-articles h2 {
+    .page__latest-articles h2 {
         margin-top: 20px;
     }
 
-    .slider {
+    .page__slider {
         margin-top: 20px;
     }
 
-    .get-notified {
+    .page__get-notified {
         margin: 120px auto;
         text-align: center;
     }
 
-    .slider img {
+    .page__slider img {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .email {
+    .page__get-notified__send__email {
         width: 200px;
         height: 40px;
         font-size: 20px;
         margin-left: 20px;
     }
     
-    .submit {
+    .page__get-notified__send__submit {
         width: 60;
         height: 40;
         font-size: 20px;
@@ -666,21 +666,21 @@ footer {
         margin-right: 20px;
     }
 
-    #form-container__donate {
+    #form-container__donate-form {
         width: 320px;
         height: 400px;
     }
 
-    #form-container__donate h2 {
+    #form-container__donate-form h2 {
         width: 320px;
         font-size: 30px;
     }
 
-    #form-container__donate textarea {
+    #form-container__donate-form textarea {
         width: 256px;
     }
     
-    .submit-send {
+    .form-container__donate-form__submit-send {
         width: 256px;
     }
 }
