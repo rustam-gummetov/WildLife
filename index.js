@@ -3,8 +3,8 @@ function scrollToElement(id) {
     el.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
 }
 
-const form = document.getElementById('popap__form');
-const formContainer = document.getElementById('popap');
+const form = document.getElementById('popup__form');
+const formContainer = document.getElementById('popup');
 const donate = document.getElementById('survival__btn');
 const body = document.querySelector('body');
 body.addEventListener('click', e => {

@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -32,7 +33,7 @@ html, body {
 header {
     height: auto;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 20px;
 }
 
@@ -73,7 +74,7 @@ nav li a {
 }
 
 .header__nav {
-    width: 550px;
+    width: 225px;
     margin-right: 120px;
 }
 
@@ -289,8 +290,8 @@ nav li a {
 }
 
 .notified__send__submit {
-    width: 120;
-    height: 60;
+    width: 120px;
+    height: 60px;
     font-size: 22px;
     padding: 15px 35px;
     text-align: center;
@@ -302,9 +303,8 @@ nav li a {
     font-weight: 400;
     font-size: 23px;
     line-height: 27px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    text-align: center;
     color: #F7F7F7;
 }
 
@@ -365,7 +365,7 @@ footer {
     background: url("img/telegram.svg") no-repeat;
 }
 
-#popap__form {
+#popup__form {
     display: flex;
     flex-direction: column;
     width: 480px;
@@ -376,7 +376,7 @@ footer {
     z-index: 1;
 }
 
-#popap__form h2 {
+#popup__form h2 {
     width: 480px;
     height: 70px;
     margin-bottom: 35px;
@@ -391,7 +391,7 @@ footer {
     color: #333333;
 }
 
-#popap__form label {
+#popup__form label {
     margin-left: 40px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -401,7 +401,7 @@ footer {
     color: #828282;
 }
 
-#popap__form input {
+#popup__form input {
     margin: 0 40px 35px 40px;
     border: 0;
     border-bottom: 2px solid #D3D3D3;
@@ -412,16 +412,16 @@ footer {
     line-height: 36px;
 }
 
-#popap__form input::placeholder {
+#popup__form input::placeholder {
     color: #BDBDBD;
 }
 
-#popap__form input:focus {
+#popup__form input:focus {
     outline: 0;
     border-bottom: 2px solid #D3D3D3;
 }
 
-#popap__form textarea {
+#popup__form textarea {
     margin: 0 40px 35px 40px;
     width: 400px;
     height: 100px;
@@ -429,7 +429,7 @@ footer {
     box-sizing: border-box;
 }
 
-.popap__form__btn {
+.popup__form__btn {
     width: 400px;
     height: 65px;
     background: #E39128;
@@ -443,12 +443,12 @@ footer {
     color: #FFFFFF;
 }
 
-.popap__form__btn:hover {
+.popup__form__btn:hover {
     background-color: #CD6326;
     border: #CD6326;
 }
 
-.popap__form__btn:active {
+.popup__form__btn:active {
     background-color: #8F5613;
     border: #8F5613;
 }
@@ -458,7 +458,7 @@ footer {
     position: absolute;
 }
 
-#popap {
+#popup {
     display: none;
     justify-content: center;
     align-items: center;
@@ -535,7 +535,6 @@ footer {
 
     .footer__nav {
         width: auto;
-        padding: 20px 0;
         margin: 0;
         display: block;
         text-align: center;
@@ -606,29 +605,28 @@ footer {
     }
     
     .notified__send__submit {
-        width: 100;
-        height: 50;
+        width: 100px;
+        height: 50px;
         font-size: 20px;
-        padding: 10px 35px;
-        font-size: 20px;
+        padding: 10px 20px;
         margin-right: 20px;
     }
 
-    #popap__form {
+    #popup__form {
         width: 400px;
         height: 500px;
     }
 
-    #popap__form h2 {
+    #popup__form h2 {
         width: 400px;
         font-size: 36px;
     }
 
-    #popap__form textarea {
+    #popup__form textarea {
         width: 320px;
     }
     
-    .popap__form__btn {
+    .popup__form__btn {
         width: 320px;
     }
 }
@@ -660,29 +658,29 @@ footer {
     }
     
     .notified__send__submit {
-        width: 60;
-        height: 40;
+        width: 60px;
+        height: 40px;
         font-size: 20px;
-        padding: 5px 20px;
+        padding: 5px 5px;
         font-size: 20px;
         margin-right: 20px;
     }
 
-    #popap__form {
+    #popup__form {
         width: 320px;
         height: 400px;
     }
 
-    #popap__form h2 {
+    #popup__form h2 {
         width: 320px;
         font-size: 30px;
     }
 
-    #popap__form textarea {
+    #popup__form textarea {
         width: 256px;
     }
     
-    .popap__form__btn {
+    .popup__form__btn {
         width: 256px;
     }
 }
