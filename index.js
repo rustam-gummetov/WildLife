@@ -3,9 +3,9 @@ function scrollToElement(id) {
     el.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
 }
 
-const form = document.getElementById('popup__form');
+const form = document.getElementById('popup_form');
 const formContainer = document.getElementById('popup');
-const donate = document.getElementById('survival__btn');
+const donate = document.getElementById('survival_btn');
 const body = document.querySelector('body');
 body.addEventListener('click', e => {
     formContainer.classList.remove('form-open');
@@ -21,9 +21,9 @@ window.addEventListener('click', e => {
     }
 })
 
-const sliderCards = document.getElementById('articles__slider').getElementsByTagName('div');
-const arrowLeft = document.getElementById('articles__slider__left');
-const arrowRight = document.getElementById('articles__slider__right');
+const sliderCards = document.getElementById('articles_slider').getElementsByTagName('div');
+const arrowLeft = document.getElementById('articles_slider_left');
+const arrowRight = document.getElementById('articles_slider_right');
 let i = 0;
 
 arrowLeft.addEventListener('click', () => {

@@ -1,88 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta />
     <title>Wildlife</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div id="popup">
-      <form id="popup__form" onclick="event.stopPropagation()">
+      <form id="popup_form" onclick="event.stopPropagation()">
         <h2>Donate</h2>
         <label for="name">Your name</label>
-        <input type="text" placeholder="Name" name="name" />
+        <input type="text" placeholder="Name" id="name" />
         <label for="amount">Amount</label>
-        <input type="text" placeholder="1000$" name="amount" />
+        <input type="text" placeholder="1000$" id="amount" />
         <label for="comment">Your comment:</label>
-        <textarea type="text" name="comment"></textarea>
-        <input class="popup__form__btn" type="submit" value="Send" />
+        <textarea id="comment"></textarea>
+        <input class="popup_form_btn" type="submit" value="Send" />
       </form>
     </div>
 
     <div class="welcome">
       <header class="header">
-        <div class="header__logo logo">
+        <div class="header_logo logo">
           <img src="img/path0.svg" width="70" height="60" alt="logo" />
-          <span class="logo__text"> Wildlife </span>
+          <span class="logo_text"> Wildlife </span>
         </div>
-
-        <nav class="nav header__nav">
-          <ul>
-            <li>
-              <a href="#articles">Articles</a>
-            </li>
-            <li>
-              <a href="#contacts">Contacts</a>
-            </li>
+        <div class="menu">
+          <nav class="nav header_nav">
+            <ul>
+              <li>
+                <a href="#articles">Articles</a>
+              </li>
+              <li>
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu_ul">
             <li>
               <img src="img/Vector.png" width="24" height="24" />
             </li>
             <li>
-              <button class="header__nav__btn">Sign in</button>
+              <button class="header_nav_btn">Sign in</button>
             </li>
           </ul>
-        </nav>
+        </div>
       </header>
 
       <div class="survival">
         <h1>Survival</h1>
-        <div class="survival__text">
+        <div class="survival_text">
           <p>
             What this means is that we exist to help protect our environment and
             do in numbers of ways. You can save the planet by donation.
           </p>
         </div>
-        <button class="survival__btn" id="survival__btn">Donate</button>
+        <button class="survival_btn" id="survival_btn">Donate</button>
       </div>
     </div>
 
     <main>
-      <div class="articles">
-        <h2 id="articles">Latest articles</h2>
+      <div class="articles" id="articles">
+        <h2>Latest articles</h2>
         <h3>Breaking news from the wild</h3>
-        <div class="articles__slider" id="articles__slider">
+        <div class="articles_slider" id="articles_slider">
           <img
             src="img/ArrowLeft.png"
             alt="ArrowRight"
-            id="articles__slider__left"
+            id="articles_slider_left"
           />
-          <div class="articles__slider__card1">
+          <div class="articles_slider_card1">
             <h4>Deer</h4>
             <h5>Naturalist investigation</h5>
           </div>
-          <div class="articles__slider__card2">
+          <div class="articles_slider_card2">
             <h4>Squirrel</h4>
             <h5>Kamikaze squirrels</h5>
           </div>
-          <div class="articles__slider__card3">
+          <div class="articles_slider_card3">
             <h4>Bird</h4>
             <h5>Birds Fight club</h5>
           </div>
           <img
             src="img/ArrowRight.png"
             alt="ArrowRight"
-            id="articles__slider__right"
+            id="articles_slider_right"
           />
         </div>
       </div>
@@ -90,25 +92,25 @@
       <div class="notified">
         <form>
           <h3>Get notified about new amazing articles</h3>
-          <div class="notified__send">
+          <div class="notified_send">
             <input
-              class="notified__send__email"
+              class="notified_send_email"
               type="text"
               placeholder="Email"
             />
-            <input class="notified__send__submit" type="submit" value="Send" />
+            <input class="notified_send_submit" type="submit" value="Send" />
           </div>
         </form>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="footer__logo logo">
+      <div class="footer_logo logo">
         <img src="img/path0.svg" width="70" height="60" alt="logo" />
-        <span class="logo__text"> Wildlife </span>
+        <span class="logo_text"> Wildlife </span>
       </div>
 
-      <nav class="nav footer__nav">
+      <nav class="nav footer_nav">
         <ul>
           <li><a href="#articles">Articles</a></li>
           <li><a href="#">About us</a></li>
@@ -117,10 +119,10 @@
       </nav>
 
       <div class="networks" id="contacts">
-        <div class="networks__facebook"></div>
-        <div class="networks__instagram"></div>
-        <div class="networks__pinterest"></div>
-        <div class="networks__telegram"></div>
+        <div class="networks_facebook"></div>
+        <div class="networks_instagram"></div>
+        <div class="networks_pinterest"></div>
+        <div class="networks_telegram"></div>
       </div>
     </footer>
 
